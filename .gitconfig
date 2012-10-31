@@ -3,6 +3,12 @@
 	goodbye = rm -f
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
+	st = status
+
+	# Show files ignored by git:
+    	ign = ls-files -o -i --exclude-standard
+	pum = push origin master
+	hum = push heroku master
 
 [apply]
 	# Detect whitespace errors when applying a patch
