@@ -50,7 +50,7 @@ apt-fast install -y openssl libreadline6 libreadline6-dev curl git-core zlib1g z
 
 
 echo "clean up"
-apt-get auto clean
+apt-get autoclean
 
 echo "horray!"
 exit 0
