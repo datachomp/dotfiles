@@ -15,7 +15,7 @@ add-apt-repository -y ppa:chris-lea/redis-server
 add-apt-repository -y ppa:webupd8team/sublime-text-2
 add-apt-repository -y ppa:nvbn-rm/ppa
 add-apt-repository -y ppa:conscioususer/polly-daily
-apt-add-repository -y ppa:yorba/ppa
+add-apt-repository -y ppa:yorba/ppa
 add-apt-repository -y ppa:indicator-multiload/stable-daily
 add-apt-repository -y ppa:cooperjona/lightread
 add-apt-repository -y ppa:juanje/freemind
