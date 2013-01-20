@@ -20,7 +20,7 @@ add-apt-repository -y ppa:indicator-multiload/stable-daily
 add-apt-repository -y ppa:cooperjona/lightread
 add-apt-repository -y ppa:juanje/freemind
 #pgadmin 1.16
-apt-add-repository ppa:voronov84/andreyv
+apt-add-repository -y ppa:voronov84/andreyv
 
 echo "Updating Repos"
 apt-get update
