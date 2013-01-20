@@ -31,6 +31,7 @@ apt-get install -y apt-fast
 apt-fast install -y preload ubuntu-tweak everpad polly
 apt-fast -y install nginx postgresql-9.2 libpq-dev pgadmin3 nodejs sublime-text
 apt-fast install -y redis-server
+apt-fast install -y mono-complete monodevelop
 
 apt-fast install -y vlc vlc-plugin-pulse mozilla-plugin-vlc
 apt-fast install -y filezilla gdebi
