@@ -15,6 +15,10 @@ add-apt-repository -y ppa:chris-lea/redis-server
 add-apt-repository -y ppa:webupd8team/sublime-text-2
 add-apt-repository -y ppa:nvbn-rm/ppa
 add-apt-repository -y ppa:conscioususer/polly-daily
+apt-add-repository -y ppa:yorba/ppa
+add-apt-repository -y ppa:indicator-multiload/stable-daily
+add-apt-repository -y ppa:cooperjona/lightread
+add-apt-repository -y ppa:juanje/freemind
 
 
 echo "Updating Repos"
@@ -25,6 +29,12 @@ echo "Installing packages"
 apt-get install -y apt-fast preload ubuntu-tweak everpad polly
 apt-get -y install nginx postgresql-9.2 libpq-dev nodejs sublime-text
 apt-get install -y redis-server
+
+apt-get install -y vlc vlc-plugin-pulse mozilla-plugin-vlc
+apt-get install -y filezilla gdebi
+apt-get install -y shotwell
+apt-get install -y indicator-multiload
+apt-get install -y lightread freemind
 
 echo "make sure  mysql is toast"
 update-rc.d mysql remove
@@ -42,21 +52,11 @@ apt-get auto clean
 echo "horray!"
 exit 0
 
-
-
 #Items to be added
-#VLC
 #facebook 
 #filezilla
-#firefox
 #chrome
 
-#gdeb installer thing
-
-#freemind
-#lightread
 #openshot
 
-#system load indicator
-#shotwell
 #stormcloud 
