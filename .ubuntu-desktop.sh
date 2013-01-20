@@ -36,7 +36,7 @@ apt-fast install -y vlc vlc-plugin-pulse mozilla-plugin-vlc
 apt-fast install -y filezilla gdebi
 apt-fast install -y shotwell
 apt-fast install -y indicator-multiload
-apt-fast install -y lightread freemind meld conky
+apt-fast install -y lightread freemind meld conky pidgin
 
 echo "make sure  mysql is toast"
 update-rc.d mysql remove
