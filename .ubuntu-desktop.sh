@@ -26,24 +26,25 @@ apt-get update
 
 echo "Installing packages"
 
-apt-get install -y apt-fast preload ubuntu-tweak everpad polly
-apt-get -y install nginx postgresql-9.2 libpq-dev nodejs sublime-text
-apt-get install -y redis-server
+apt-get install -y apt-fast 
+apt-fast install -y preload ubuntu-tweak everpad polly
+apt-fast -y install nginx postgresql-9.2 libpq-dev nodejs sublime-text
+apt-fast install -y redis-server
 
-apt-get install -y vlc vlc-plugin-pulse mozilla-plugin-vlc
-apt-get install -y filezilla gdebi
-apt-get install -y shotwell
-apt-get install -y indicator-multiload
-apt-get install -y lightread freemind
+apt-fast install -y vlc vlc-plugin-pulse mozilla-plugin-vlc
+apt-fast install -y filezilla gdebi
+apt-fast install -y shotwell
+apt-fast install -y indicator-multiload
+apt-fast install -y lightread freemind
 
 echo "make sure  mysql is toast"
 update-rc.d mysql remove
 update-rc.d apache2 remove
 
 echo "rvm time"
-apt-get -y install git-core curl build-essential zlib1g-dev libreadline-dev libssl-dev libxml2-dev git-gui git-doc
+apt-fast install -y git-core curl build-essential zlib1g-dev libreadline-dev libssl-dev libxml2-dev git-gui git-doc
 bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
-apt-get -y install openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
+apt-fast install -y openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
 
 
 echo "clean up"
