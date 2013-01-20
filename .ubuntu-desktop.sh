@@ -19,7 +19,8 @@ apt-add-repository -y ppa:yorba/ppa
 add-apt-repository -y ppa:indicator-multiload/stable-daily
 add-apt-repository -y ppa:cooperjona/lightread
 add-apt-repository -y ppa:juanje/freemind
-
+#pgadmin 1.16
+apt-add-repository ppa:voronov84/andreyv
 
 echo "Updating Repos"
 apt-get update
@@ -28,14 +29,14 @@ echo "Installing packages"
 
 apt-get install -y apt-fast 
 apt-fast install -y preload ubuntu-tweak everpad polly
-apt-fast -y install nginx postgresql-9.2 libpq-dev nodejs sublime-text
+apt-fast -y install nginx postgresql-9.2 libpq-dev pgadmin3 nodejs sublime-text
 apt-fast install -y redis-server
 
 apt-fast install -y vlc vlc-plugin-pulse mozilla-plugin-vlc
 apt-fast install -y filezilla gdebi
 apt-fast install -y shotwell
 apt-fast install -y indicator-multiload
-apt-fast install -y lightread freemind
+apt-fast install -y lightread freemind meld conky
 
 echo "make sure  mysql is toast"
 update-rc.d mysql remove
