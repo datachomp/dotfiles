@@ -4,15 +4,17 @@ apt-get -y update
 apt-get -y install curl git-core python-software-properties 
 
 echo "Add PPAs"
-add-apt-repository ppa:texworks
-add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-add-apt-repository ppa:apt-fast/stable
-add-apt-repository ppa:tualatrix/ppa
-add-apt-repository ppa:nginx/stable 
-add-apt-repository ppa:pitti/postgresql 
-add-apt-repository ppa:chris-lea/node.js
-add-apt-repository ppa:chris-lea/redis-server
-add-apt-repository ppa:webupd8team/sublime-text-2
+add-apt-repository -y ppa:texworks
+add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
+add-apt-repository -y ppa:apt-fast/stable
+add-apt-repository -y ppa:tualatrix/ppa
+add-apt-repository -y ppa:nginx/stable 
+add-apt-repository -y ppa:pitti/postgresql 
+add-apt-repository -y ppa:chris-lea/node.js
+add-apt-repository -y ppa:chris-lea/redis-server
+add-apt-repository -y ppa:webupd8team/sublime-text-2
+add-apt-repository -y ppa:nvbn-rm/ppa
+add-apt-repository -y ppa:conscioususer/polly-daily
 
 
 echo "Updating Repos"
@@ -20,7 +22,7 @@ apt-get update
 
 echo "Installing packages"
 
-apt-get install -y apt-fast preload ubuntu-tweak
+apt-get install -y apt-fast preload ubuntu-tweak everpad polly
 apt-get -y install nginx postgresql-9.2 libpq-dev nodejs sublime-text
 apt-get install -y redis-server
 
@@ -39,3 +41,22 @@ apt-get auto clean
 
 echo "horray!"
 exit 0
+
+
+
+#Items to be added
+#VLC
+#facebook 
+#filezilla
+#firefox
+#chrome
+
+#gdeb installer thing
+
+#freemind
+#lightread
+#openshot
+
+#system load indicator
+#shotwell
+#stormcloud 
