@@ -41,11 +41,13 @@ apt-fast install -y mono-complete monodevelop meld
 
 #media
 apt-fast install -y vlc vlc-plugin-pulse mozilla-plugin-vlc
+apt-fast install -y openshot #video editor
 
 #misc
 apt-fast install -y filezilla everpad polly
 apt-fast install -y shotwell
 apt-fast install -y lightread freemind pidgin
+apt-fast install -y chromium-browser
 
 echo "make sure mysql is toast"
 update-rc.d mysql remove
@@ -65,7 +67,5 @@ exit 0
 
 #Items to be added
 #facebook
-#chrome
-#openshot
 
 #stormcloud   -- I think this is just stuck in the Ubuntu Store
