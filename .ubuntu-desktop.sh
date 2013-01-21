@@ -1,7 +1,8 @@
 #!/bin/bash
 echo "Get the basics"
-apt-get -y update 
-apt-get -y install curl git-core python-software-properties 
+# apt-get -y update   # Is this overkill at this step?
+# This lets us just add ppas
+apt-get -y install python-software-properties 
 
 #hurry and load apt-fast
 add-apt-repository -y ppa:apt-fast/stable
@@ -45,7 +46,7 @@ apt-fast install -y openshot #video editor
 
 #misc
 apt-fast install -y filezilla everpad polly
-apt-fast install -y shotwell
+apt-fast install -y shotwell curl
 apt-fast install -y lightread freemind pidgin
 apt-fast install -y chromium-browser
 
