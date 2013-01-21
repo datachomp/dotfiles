@@ -3,10 +3,15 @@ echo "Get the basics"
 apt-get -y update 
 apt-get -y install curl git-core python-software-properties 
 
+#hurry and load apt-fast
+add-apt-repository -y ppa:apt-fast/stable
+apt-get update
+apt-get install -y apt-fast 
+
 echo "Add PPAs"
 add-apt-repository -y ppa:texworks
 add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
-add-apt-repository -y ppa:apt-fast/stable
+
 add-apt-repository -y ppa:tualatrix/ppa
 add-apt-repository -y ppa:nginx/stable 
 add-apt-repository -y ppa:pitti/postgresql 
@@ -26,20 +31,23 @@ echo "Updating Repos"
 apt-get update
 
 echo "Installing packages"
+#system tweaks
+apt-fast install -y preload ubuntu-tweak indicator-multiload conky gdebi
 
-apt-get install -y apt-fast 
-apt-fast install -y preload ubuntu-tweak everpad polly
-apt-fast -y install nginx postgresql-9.2 libpq-dev pgadmin3 nodejs sublime-text
+#Dev Tools
+apt-fast install -y nginx postgresql-9.2 libpq-dev pgadmin3 nodejs sublime-text
 apt-fast install -y redis-server
-apt-fast install -y mono-complete monodevelop
+apt-fast install -y mono-complete monodevelop meld
 
+#media
 apt-fast install -y vlc vlc-plugin-pulse mozilla-plugin-vlc
-apt-fast install -y filezilla gdebi
-apt-fast install -y shotwell
-apt-fast install -y indicator-multiload
-apt-fast install -y lightread freemind meld conky pidgin
 
-echo "make sure  mysql is toast"
+#misc
+apt-fast install -y filezilla everpad polly
+apt-fast install -y shotwell
+apt-fast install -y lightread freemind pidgin
+
+echo "make sure mysql is toast"
 update-rc.d mysql remove
 update-rc.d apache2 remove
 
@@ -56,10 +64,8 @@ echo "horray!"
 exit 0
 
 #Items to be added
-#facebook 
-#filezilla
+#facebook
 #chrome
-
 #openshot
 
-#stormcloud 
+#stormcloud   -- I think this is just stuck in the Ubuntu Store
