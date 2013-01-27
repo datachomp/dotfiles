@@ -46,7 +46,7 @@ apt-fast install -y openshot #video editor
 
 #misc
 apt-fast install -y filezilla everpad polly
-apt-fast install -y shotwell curl
+apt-fast install -y shotwell curl nautilus-open-terminal
 apt-fast install -y lightread freemind pidgin
 apt-fast install -y chromium-browser
 
@@ -63,6 +63,8 @@ apt-fast install -y openssl libreadline6 libreadline6-dev curl git-core zlib1g z
 echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
 echo 'export PATH=$HOME/.rvm/bin:$PATH' >> ~/.bashrc
 
+#this lens is just way too slow
+apt-get remove unity-lens-shopping
 
 echo "clean up"
 apt-get autoclean
