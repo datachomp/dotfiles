@@ -49,6 +49,12 @@ apt-fast install -y filezilla everpad polly
 apt-fast install -y shotwell curl nautilus-open-terminal
 apt-fast install -y lightread freemind pidgin
 apt-fast install -y chromium-browser
+apf-fast install -y p7zip-rar p7zip-full
+
+#testing
+#sudo add-apt-repository ppa:atareao/atareao
+#sudo apt-get install my-weather-indicator
+
 
 echo "make sure mysql is toast"
 update-rc.d mysql remove
@@ -65,6 +71,17 @@ echo 'export PATH=$HOME/.rvm/bin:$PATH' >> ~/.bashrc
 
 #this lens is just way too slow
 apt-get remove unity-lens-shopping
+
+#show all startup apps in startup applications
+sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
+
+#normal scrolling
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
+
+# move the x - []  icons to the right side
+gconftool-2 --set /apps/metacity/general/button_layout --type string menu:minimize,maximize,close
+
+
 
 echo "clean up"
 apt-get autoclean
