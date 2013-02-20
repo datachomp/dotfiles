@@ -24,7 +24,7 @@ add-apt-repository -y ppa:conscioususer/polly-daily
 add-apt-repository -y ppa:yorba/ppa
 add-apt-repository -y ppa:indicator-multiload/stable-daily
 add-apt-repository -y ppa:cooperjona/lightread
-add-apt-repository -y ppa:juanje/freemind
+
 #pgadmin 1.16
 apt-add-repository -y ppa:voronov84/andreyv
 
@@ -47,7 +47,7 @@ apt-fast install -y openshot #video editor
 #misc
 apt-fast install -y filezilla everpad polly
 apt-fast install -y shotwell curl nautilus-open-terminal
-apt-fast install -y lightread freemind pidgin
+apt-fast install -y lightread pidgin
 apt-fast install -y chromium-browser
 apf-fast install -y p7zip-rar p7zip-full
 
