@@ -13,7 +13,8 @@
 [apply]
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
-
+[core]
+	autocrlf = true
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
