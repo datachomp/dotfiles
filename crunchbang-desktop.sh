@@ -28,6 +28,6 @@ sudo apt-get update
 sudo apt-get install sublime-text
 
 \curl -L https://get.rvm.io | bash -s stable --autolibs=3
-. .bash_profile
+source ~/.bash_profile
 rvm install 2.0.0-p247
 rvm --default use 2.0.0-p247
