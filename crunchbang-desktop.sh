@@ -2,31 +2,27 @@ sudo apt-get install -y python-software-properties software-properties-common cu
 
 sudo apt-get update
 
-sudo nano /etc/apt/sources.list.d/pgdg.list
-sudo add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main"
-
+#db
+sudo echo "deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 sudo wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install postgresql-9.2 postgres-9.2-common pgadmin3
+sudo apt-get install -y postgresql-9.2 postgresql-9.2-common pgadmin3
 
-#https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
-sudo apt-get install python g++ make checkinstall
-mkdir ~/src && cd $_
-wget -N http://nodejs.org/dist/node-latest.tar.gz
-tar xzvf node-latest.tar.gz && cd node-v*
-./configure
-checkinstall #(remove the "v" in front of the version number in the dialog)
-sudo dpkg -i node_*
+#node
+sudo echo "deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu lucid main" > /etc/apt/sources.list.d/chris-lea-node_js-wheezy.list
+sudo apt-get update
 
 
 sudo apt-get install -y nodejs
 sudo apt-get install -y libpq-dev postgresql-client 
 sudo apt-get install -y p7zip-full
 
-sudo add-apt-repository ppa:webupd8team/sublime-text-2
+sudo echo "webupd8team-sublime-text-2-wheezy.list" > /etc/apt/sources.list.d/webupd8team-sublime-text-2-wheezy.list
 sudo apt-get update
-sudo apt-get install sublime-text
+sudo apt-get install -y sublime-text
 
+
+#ruby
 \curl -L https://get.rvm.io | bash -s stable --autolibs=3
 source ~/.bash_profile
 rvm install 2.0.0-p247
