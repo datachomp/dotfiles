@@ -3,11 +3,9 @@ sudo apt-get install -y python-software-properties software-properties-common cu
 sudo apt-get update
 
 sudo nano /etc/apt/sources.list.d/pgdg.list
-cat << deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main  #12.04
-wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
-sudo apt-get update
+sudo add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main"
 
-wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
+sudo wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install postgresql-9.2 postgres-9.2-common pgadmin3
 
@@ -28,3 +26,8 @@ sudo apt-get install -y p7zip-full
 sudo add-apt-repository ppa:webupd8team/sublime-text-2
 sudo apt-get update
 sudo apt-get install sublime-text
+
+\curl -L https://get.rvm.io | bash -s stable --autolibs=3
+. .bash_profile
+rvm install 2.0.0-p247
+rvm --default use 2.0.0-p247
