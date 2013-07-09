@@ -13,10 +13,10 @@ sudo mv ~/chris-lea-node_js-wheezy.list /etc/apt/sources.list.d/chris-lea-node_j
 sudo apt-get update
 
 #sublimetext
-sudo echo "webupd8team-sublime-text-2-wheezy.list" > /etc/apt/sources.list.d/webupd8team-sublime-text-2-wheezy.list
+echo "deb http://ppa.launchpad.net/webupd8team/sublime-text-2/ubuntu precise main" > ~/webupd8team-sublime-text-2-wheezy.list
+
 
 sudo apt-get install -y postgresql-9.2 pgadmin3 libpq-dev postgresql-client
-
 sudo apt-get install -y nodejs
 sudo apt-get install -y p7zip-full
 
