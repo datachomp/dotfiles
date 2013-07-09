@@ -8,8 +8,13 @@ sudo mv ~/pgdg.list /etc/apt/sources.list.d/pgdg.list
 sudo wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 
 #node
-echo "deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu lucid main" > ~/chris-lea-node_js-wheezy.list
-sudo mv ~/chris-lea-node_js-wheezy.list /etc/apt/sources.list.d/chris-lea-node_js-wheezy.list
+wget http://nodejs.org/dist/v0.10.12/node-v0.10.12.tar.gz
+tar xzf node-v0.10.12.tar.gz 
+cd node-v0.10.12/
+./configure
+make
+make test
+sudo make install
 
 #sublimetext
 echo "deb http://ppa.launchpad.net/webupd8team/sublime-text-2/ubuntu precise main" > ~/webupd8team-sublime-text-2-wheezy.list
