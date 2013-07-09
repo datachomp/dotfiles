@@ -10,12 +10,12 @@ sudo wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | su
 #node
 echo "deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu lucid main" > ~/chris-lea-node_js-wheezy.list
 sudo mv ~/chris-lea-node_js-wheezy.list /etc/apt/sources.list.d/chris-lea-node_js-wheezy.list
-sudo apt-get update
 
 #sublimetext
 echo "deb http://ppa.launchpad.net/webupd8team/sublime-text-2/ubuntu precise main" > ~/webupd8team-sublime-text-2-wheezy.list
+sudo mv ~/webupd8team-sublime-text-2-wheezy.list /etc/apt/sources.list.d/webupd8team-sublime-text-2-wheezy.list
 
-
+sudo apt-get update
 sudo apt-get install -y postgresql-9.2 pgadmin3 libpq-dev postgresql-client
 sudo apt-get install -y nodejs
 sudo apt-get install -y p7zip-full
