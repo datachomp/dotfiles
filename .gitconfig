@@ -9,7 +9,7 @@
     	ign = ls-files -o -i --exclude-standard
 	pum = push origin master
 	hum = push heroku master
-	dbyam = git update-index --assume-unchanged config/database.yml
+	dbyam = update-index --assume-unchanged config/database.yml
 
 [apply]
 	# Detect whitespace errors when applying a patch
