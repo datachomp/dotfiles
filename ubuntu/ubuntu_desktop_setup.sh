@@ -37,9 +37,10 @@ echo "Installing packages"
 apt-fast install -y preload ubuntu-tweak indicator-multiload conky gdebi
 
 #Dev Tools
-apt-fast install -y nginx postgresql-9.2 libpq-dev pgadmin3 nodejs sublime-text
+apt-fast install -y nginx postgresql-9.2 postgresql-contrib libpq-dev pgadmin3 nodejs sublime-text
 apt-fast install -y redis-server
-apt-fast install -y mono-complete monodevelop meld
+#apt-fast install -y mono-complete monodevelop meld
+apt-fast install -y meld
 
 #media
 apt-fast install -y vlc vlc-plugin-pulse mozilla-plugin-vlc
