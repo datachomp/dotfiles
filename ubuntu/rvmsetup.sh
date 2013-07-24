@@ -16,7 +16,8 @@ sudo apt-get update && sudo apt-get upgrade -y
 echo "export EDITOR=vim" >> ~/.bashrc
 
 # Install RVM
-\curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
+#\curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
+\curl -L https://get.rvm.io | bash -s stable --autolibs=enabled
 
 # Source rvm
 source ~/.rvm/scripts/rvm
