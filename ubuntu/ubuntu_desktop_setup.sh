@@ -2,7 +2,7 @@
 echo "Get the basics"
 # apt-get -y update   # Is this overkill at this step?
 # This lets us just add ppas
-sudo apt-get -y install python-software-properties software-properties-common
+sudo apt-get -y install software-properties-common python-software-properties
 
 #hurry and load apt-fast
 sudo add-apt-repository -y ppa:apt-fast/stable
