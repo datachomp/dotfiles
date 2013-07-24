@@ -71,7 +71,7 @@ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~
 echo 'export PATH=$HOME/.rvm/bin:$PATH' >> ~/.bashrc
 
 #this lens is just way too slow
-sudo apt-get remove unity-lens-shopping
+sudo apt-get remove -y unity-lens-shopping
 
 #show all startup apps in startup applications
 sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
