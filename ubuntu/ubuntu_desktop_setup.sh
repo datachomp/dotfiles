@@ -50,7 +50,7 @@ sudo apt-fast install -y filezilla everpad polly
 sudo apt-fast install -y shotwell curl nautilus-open-terminal
 sudo apt-fast install -y lightread pidgin
 sudo apt-fast install -y chromium-browser
-sudo apt-fast install -y p7zip-rar p7zip-full
+sudo apt-fast install -y p7zip-rar p7zip-full dos2unix
 
 #testing
 #sudo add-apt-repository ppa:atareao/atareao
