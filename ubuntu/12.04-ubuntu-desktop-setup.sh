@@ -31,10 +31,7 @@ sudo nano /etc/apt/sources.list.d/pgdg.list
  cat << deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main  #12.04
 wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install libpq-dev postgresql-9.2 postgresql-contrib-9.2
-
-#pgadmin 1.16  #not sure if this one is still needed
-sudo apt-add-repository -y ppa:voronov84/andreyv
+sudo apt-get install libpq-dev postgresql-9.2 postgresql-contrib-9.2 pgadmin3
 
 echo "Updating Repos"
 sudo apt-get update
@@ -44,7 +41,7 @@ echo "Installing packages"
 sudo apt-fast install -y preload ubuntu-tweak indicator-multiload conky gdebi
 
 #Dev Tools
-sudo apt-fast install -y nginx pgadmin3 nodejs sublime-text
+sudo apt-fast install -y nginx nodejs sublime-text
 sudo apt-fast install -y redis-server
 #apt-fast install -y mono-complete monodevelop meld
 sudo apt-fast install -y meld
