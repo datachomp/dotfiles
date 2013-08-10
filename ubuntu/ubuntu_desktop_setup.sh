@@ -73,8 +73,13 @@ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~
 source ~/.bashrc
 
 
-#this lens is just way too slow
+#Comment out the lens you don't want to kill
 sudo apt-get remove -y unity-lens-shopping
+sudo apt-get autoremove unity-lens-shopping
+sudo apt-get autoremove unity-lens-music
+sudo apt-get autoremove unity-lens-photos
+sudo apt-get autoremove unity-lens-gwibber
+sudo apt-get autoremove unity-lens-video
 
 #show all startup apps in startup applications
 sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
