@@ -68,7 +68,8 @@ sudo apt-fast install -y openssl libreadline6 libreadline6-dev curl git-core zli
 
 curl -L https://get.rvm.io | bash -s stable --ruby
 echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
-echo 'export PATH=$HOME/.rvm/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+
 
 #this lens is just way too slow
 sudo apt-get remove -y unity-lens-shopping

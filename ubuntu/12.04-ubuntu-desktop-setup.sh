@@ -21,7 +21,7 @@ sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo add-apt-repository -y ppa:chris-lea/redis-server
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
 sudo add-apt-repository -y ppa:nvbn-rm/ppa
-sudo add-apt-repository -y ppa:conscioususer/polly-daily
+sudo add-apt-repository -y ppa:conscioususer/polly-daily #twitter client
 sudo add-apt-repository -y ppa:yorba/ppa
 sudo add-apt-repository -y ppa:indicator-multiload/stable-daily
 sudo add-apt-repository -y ppa:cooperjona/lightread
@@ -71,9 +71,9 @@ sudo apt-fast install -y git-core curl build-essential zlib1g-dev libreadline-de
 #bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 sudo apt-fast install -y openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
 
-#curl -L https://get.rvm.io | bash -s stable --ruby
-#echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
-#echo 'export PATH=$HOME/.rvm/bin:$PATH' >> ~/.bashrc
+curl -L https://get.rvm.io | bash -s stable --ruby
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
+source ~/.bashrc
 
 #this lens is just way too slow
 #sudo apt-get remove -y unity-lens-shopping
