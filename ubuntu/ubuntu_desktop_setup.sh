@@ -52,6 +52,8 @@ sudo apt-fast install -y lightread pidgin
 sudo apt-fast install -y chromium-browser
 sudo apt-fast install -y p7zip-rar p7zip-full dos2unix
 
+sudo apt-get install gufw #firewall
+
 #testing
 #sudo add-apt-repository ppa:atareao/atareao
 #sudo apt-get install my-weather-indicator
