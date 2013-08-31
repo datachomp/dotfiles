@@ -1,15 +1,18 @@
-\echo '\nWelcome, my magistrate\n'
-
+-- formatting
 \x auto
-
+-- replace nulls
 \pset null ¤
 \pset linestyle unicode
 \pset border 2
+-- show execution times
 \timing
-
+-- colorize
 \set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
 
+-- greeting
+\echo '\nWelcome, my magistrate\n'
 
+--helpful queries
 \set uptime 'select now() - backend_start as uptime from pg_stat_activity where pid = pg_backend_pid();'
 \set show_slow_queries 'SELECT (total_time / 1000 / 60) as total_minutes, (total_time/calls) as average_time, query FROM pg_stat_statements ORDER BY 1 DESC LIMIT 100;'
 
