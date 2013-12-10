@@ -1,13 +1,34 @@
+\set QUIET 1
+
 -- formatting
 \x auto
 -- replace nulls
 \pset null ¤
 \pset linestyle unicode
 \pset border 2
+\set VERBOSITY verbose
 -- show execution times
 \timing
 -- colorize
 \set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
+
+
+-- colorize Prompt
+--\set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
+\set PROMPT1 '%[%033[1m%]%M %n@%/%R%[%033[0m%]%# '
+--harolds
+--\set PROMPT1 '%[%033[1m%]%M/%/%R%[%033[0m%]%# '
+\set PROMPT2 '[more] %R > '
+
+--logging
+-- Use a separate history file per-database.
+\set HISTFILE ~/.psql_history- :DBNAME
+-- If a command is run more than once in a row, only store it once in the
+-- history.
+\set HISTCONTROL ignoredups
+-- Autocomplete keywords (like SELECT) in upper-case, even if you started
+-- typing them in lower case.
+\set COMP_KEYWORD_CASE upper
 
 -- greeting
 \echo '\nWelcome, my magistrate\n'
