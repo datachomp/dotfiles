@@ -27,3 +27,6 @@ source ~/.bashrc
 
 # Reload RVM
 rvm reload
+
+rvm install 2.1.0
+rvm --default use 2.1.0
