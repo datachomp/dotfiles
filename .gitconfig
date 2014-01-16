@@ -4,6 +4,7 @@
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
 	st = status
+	d = diff
 
 	# Show files ignored by git:
     	ign = ls-files -o -i --exclude-standard
@@ -36,3 +37,7 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+
+[user]
+        email = rob@datachomp.com
+        name = rob sullivan
