@@ -2,6 +2,7 @@ PS1="\[\e[01;32m\]\u@\h \[\e[01;34m\]\W \`if [ \$? = 0 ]; then echo -e '\[\e[01;
 
 alias flushcache="dscacheutil -flushcache"
 alias startredis="redis-server /usr/local/etc/redis.conf"
+alias tailpg="tail -f ~/Library/Application\ Support/Postgres93/var/pg_log/*"
 
 export BUNDLER_EDITOR=subl
 
