@@ -1,6 +1,6 @@
-export PATH=/Applications/Postgres93.app/Contents/MacOS/bin:$PATH
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
 
-export PATH=/usr/local/bin:$PATH
 source ~/.bashrc
 
 
@@ -14,7 +14,7 @@ alias bash_reload='source ~/.bash_profile'
 alias systail='tail -f /var/log/system.log'
 alias top='top -o cpu'
 alias c='clear'
-alias ip='ifconfig'
+alias ipconfig='ifconfig'
 alias q="exit"
 
 # PostgreSQL
@@ -22,6 +22,8 @@ alias start_pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/ser
 alias stop_pg='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 #Redis
 alias start_redis='redis-server /usr/local/etc/redis.conf'
+alias startmemcache="memcached -d"
+alias tailpg="tail -f ~/Library/Application\ Support/Postgres93/var/pg_log/*"
 
 # Rails aliases
 alias rtp='rake db:test:prepare'
