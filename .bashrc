@@ -2,6 +2,7 @@ PS1="\[\e[01;32m\]\u@\h \[\e[01;34m\]\W \`if [ \$? = 0 ]; then echo -e '\[\e[01;
 
 alias flushcache="dscacheutil -flushcache"
 alias startredis="redis-server /usr/local/etc/redis.conf"
+alias startmemcache="memcached -d"
 alias tailpg="tail -f ~/Library/Application\ Support/Postgres93/var/pg_log/*"
 
 export BUNDLER_EDITOR=subl
@@ -12,7 +13,8 @@ export RUBY_HEAP_FREE_MIN=500000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=100000000
-
+export RUBY_GC_HEAP_INIT_SLOTS=1000000
+export RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR=1.3
 
 # Store 10,000 history entries
 export HISTSIZE=10000
