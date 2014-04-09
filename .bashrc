@@ -5,6 +5,10 @@ alias startredis="redis-server /usr/local/etc/redis.conf"
 alias startmemcache="memcached -d"
 alias tailpg="tail -f ~/Library/Application\ Support/Postgres93/var/pg_log/*"
 
+
+alias hu="heroku update && heroku plugins:update heroku-pg-extras"
+alias springclean="brew cleanup --force -s && rvm cleanup all && gem cleanup"
+
 export BUNDLER_EDITOR=subl
 
 #ruby garbage collection hacks
