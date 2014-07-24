@@ -12,6 +12,8 @@
 \timing
 -- colorize
 \set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
+-- limit paging
+\pset pager off
 
 
 -- colorize Prompt
