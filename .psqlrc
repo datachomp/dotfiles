@@ -7,6 +7,7 @@
 \pset linestyle unicode
 \pset border 2
 \set VERBOSITY verbose
+\set ON_ERROR_ROLLBACK interactive
 -- show execution times
 \timing
 -- colorize
