@@ -15,7 +15,6 @@ sudo add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
 
 sudo add-apt-repository -y ppa:tualatrix/ppa
 sudo add-apt-repository -y ppa:nginx/stable 
-sudo add-apt-repository -y ppa:pitti/postgresql 
 sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo add-apt-repository -y ppa:chris-lea/redis-server
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
@@ -36,7 +35,12 @@ echo "Installing packages"
 sudo apt-fast install -y preload ubuntu-tweak indicator-multiload conky gdebi
 
 #Dev Tools
-sudo apt-fast install -y nginx postgresql-9.2 postgresql-contrib libpq-dev pgadmin3 nodejs sublime-text
+#postgres
+bash <(curl -s https://raw.github.com/pgexperts/add-pgdg-apt-repo/master/add-pgdg-apt-repo.sh)
+
+sudo apt-fast install -y libpq-dev postgresql-9.3 postgresql-contrib-9.3 pgadmin3 libpq-dev
+
+sudo apt-fast install -y nginx nodejs sublime-text
 sudo apt-fast install -y redis-server
 #apt-fast install -y mono-complete monodevelop meld
 sudo apt-fast install -y meld
