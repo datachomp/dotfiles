@@ -1,14 +1,5 @@
 PS1="\[\e[01;32m\]\u@\h \[\e[01;34m\]\W \`if [ \$? = 0 ]; then echo -e '\[\e[01;32m\]:)'; else echo -e '\[\e[01;31m\]:('; fi\` \[\e[01;34m\]$\[\e[00m\]"
 
-alias flushcache="dscacheutil -flushcache"
-alias startredis="redis-server /usr/local/etc/redis.conf"
-alias startmemcache="memcached -d"
-alias tailpg="tail -f ~/Library/Application\ Support/Postgres93/var/pg_log/*"
-
-
-alias hu="heroku update && heroku plugins:update heroku-pg-extras"
-alias springclean="brew cleanup --force -s && rvm cleanup all && gem cleanup"
-
 export BUNDLER_EDITOR=subl
 
 #ruby garbage collection hacks
