@@ -1,9 +1,27 @@
+# Shortcuts
+alias db="cd ~/Documents/Dropbox"
+alias dl="cd ~/Downloads"
+alias p="cd ~/projects"
+alias h="history"
 
-alias flushcache="dscacheutil -flushcache"
-alias startredis="redis-server /usr/local/etc/redis.conf"
-alias startmemcache="memcached -d"
-alias tailpg="tail -f ~/Library/Application\ Support/Postgres93/var/pg_log/*"
 
+# Get week number
+alias week='date +%V'
+
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+alias flushcache="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias ipconfig='ifconfig'
+
+
+#software updates
+alias osxupadte="sudo softwareupdate -i -a"
+alias update="brew update; brew upgrade; brew cleanup; rvm get stable; gem update;"
 alias hu="heroku update && heroku plugins:update heroku-pg-extras"
 alias springclean="brew cleanup --force -s && rvm cleanup all && gem cleanup"
 
@@ -17,16 +35,23 @@ alias bash_reload='source ~/.bash_profile'
 alias systail='tail -f /var/log/system.log'
 alias top='top -o cpu'
 alias c='clear'
-alias ipconfig='ifconfig'
 alias q="exit"
 
 # PostgreSQL
 alias start_pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias stop_pg='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias tailpg="tail -f ~/Library/Application\ Support/Postgres/var/pg_log/*"
 #Redis
 alias start_redis='redis-server /usr/local/etc/redis.conf'
 alias startmemcache="memcached -d"
-alias tailpg="tail -f ~/Library/Application\ Support/Postgres/var/pg_log/*"
+
+
+# Clean up LaunchServices to remove duplicates in the “Open With” menu
+alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
 
 # Rails aliases
 alias rtp='rake db:test:prepare'
