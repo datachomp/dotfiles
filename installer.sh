@@ -9,8 +9,9 @@ ln -s ${BASEDIR}/.git ~/
 ln -s ${BASEDIR}/.gitconfig ~/
 ln -s ${BASEDIR}/.gitignore ~/
 
-# gemrc
+# ruby
 ln -s ${BASEDIR}/.gemrc ~/
+ln -s ${BASEDIR}/.irbrc ~/
 
 #web pullers
 ln -s ${BASEDIR}/.curlrc ~/
@@ -27,3 +28,4 @@ ln -s ${BASEDIR}/.psqlrc ~/
 
 #hostfile
 ln -s ${BASEDIR}/.host_file_update.sh ~/
+
