@@ -28,5 +28,5 @@ ln -s ${BASEDIR}/.bashrc ~/
 ln -s ${BASEDIR}/.psqlrc ~/
 
 #hostfile
-ln -s ${BASEDIR}/.host_file_update.sh ~/
+ln -s ${BASEDIR}/host_file_update.sh ~/
 
