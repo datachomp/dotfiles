@@ -20,9 +20,9 @@ alias ipconfig='ifconfig'
 
 
 #software updates
-alias osxupadte="sudo softwareupdate -i -a"
+alias osxupdate="sudo softwareupdate -i -a"
 alias update="brew update; brew upgrade; brew cleanup; rvm get stable; gem update;"
-alias hu="heroku update && heroku plugins:update heroku-pg-extras"
+alias hu="heroku update && heroku plugins:update"
 alias springclean="brew cleanup --force -s && rvm cleanup all && gem cleanup"
 
 # General aliases
