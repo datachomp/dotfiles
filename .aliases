@@ -1,8 +1,8 @@
 # Shortcuts
-alias db="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias p="cd ~/projects"
-alias h="history"
+alias db='cd ~/Documents/Dropbox'
+alias dl='cd ~/Downloads'
+alias p='cd ~/projects'
+alias h='history'
 
 
 # Get week number
@@ -12,18 +12,18 @@ alias week='date +%V'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en0"
-alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
-alias flushcache="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias localip='ipconfig getifaddr en0'
+alias ips="'ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+alias flushcache='dscacheutil -flushcache && killall -HUP mDNSResponder'
 alias ipconfig='ifconfig'
 
 
 #software updates
-alias osxupdate="sudo softwareupdate -i -a"
-alias update="brew update; brew upgrade; brew cleanup; rvm get stable; gem update;"
-alias hu="heroku update && heroku plugins:update"
-alias springclean="brew cleanup --force -s && rvm cleanup all && gem cleanup"
+alias osxupdate='sudo softwareupdate -i -a'
+alias update='brew update; brew upgrade; brew cleanup; rvm get stable; gem update;'
+alias hu='heroku update && heroku plugins:update'
+alias springclean='brew cleanup --force -s && rvm cleanup all && gem cleanup'
 
 # General aliases
 alias cd..='cd ..'
@@ -35,15 +35,15 @@ alias bash_reload='source ~/.bash_profile'
 alias systail='tail -f /var/log/system.log'
 alias top='top -o cpu'
 alias c='clear'
-alias q="exit"
+alias q='exit'
 
 # PostgreSQL
 alias start_pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias stop_pg='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-alias tailpg="tail -f ~/Library/Application\ Support/Postgres/var/pg_log/*"
+alias tailpg='tail -f ~/Library/Application\ Support/Postgres/var/pg_log/*'
 #Redis
-alias start_redis='redis-server /usr/local/etc/redis.conf'
-alias startmemcache="memcached -d"
+alias startredis='redis-server /usr/local/etc/redis.conf'
+alias startmemcached='memcached -d'
 
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
