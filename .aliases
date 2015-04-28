@@ -23,7 +23,7 @@ alias ipconfig='ifconfig'
 alias osxupdate='sudo softwareupdate -i -a'
 alias update='brew update; brew upgrade; brew cleanup; rvm get stable; gem update;'
 alias hu='heroku update && heroku plugins:update'
-alias springclean='brew cleanup --force -s && rvm cleanup all && gem cleanup'
+alias springclean='brew cleanup --force -s && rvm cleanup all && gem cleanup all'
 
 # General aliases
 alias cd..='cd ..'
