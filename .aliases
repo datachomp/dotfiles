@@ -1,26 +1,18 @@
 # Shortcuts
-alias db='cd ~/Documents/Dropbox'
 alias dl='cd ~/Downloads'
 alias p='cd ~/projects'
 alias h='history'
-
-
-# Get week number
-alias week='date +%V'
 
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # IP addresses
-alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias localip='ipconfig getifaddr en0'
 alias ips="'ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias flushcache='dscacheutil -flushcache && killall -HUP mDNSResponder'
 alias ipconfig='ifconfig'
 
-
 #software updates
-alias osxupdate='sudo softwareupdate -i -a'
 alias update='brew update; brew upgrade; brew cleanup; rvm get stable; gem update;'
 alias hu='heroku update && heroku plugins:update'
 alias springclean='brew cleanup --force -s && rvm cleanup all && gem cleanup all'
@@ -29,9 +21,6 @@ alias springclean='brew cleanup --force -s && rvm cleanup all && gem cleanup all
 alias cd..='cd ..'
 alias l='ls -l'
 # alias ebash='subl ~/.bash_profile &'
-alias ebash='mate ~/.bash_profile &'
-alias reload_bash='source ~/.bash_profile'
-alias bash_reload='source ~/.bash_profile'
 alias systail='tail -f /var/log/system.log'
 alias top='top -o cpu'
 alias c='clear'
@@ -45,17 +34,13 @@ alias tailpg='tail -f ~/Library/Application\ Support/Postgres/var/pg_log/*'
 alias startredis='redis-server /usr/local/etc/redis.conf'
 alias startmemcached='memcached -d'
 
-
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-
 # Rails aliases
-alias rtp='rake db:test:prepare'
-alias a='autotest -rails' # makes autotesting quicker
 alias rt='rake test'
 alias rmt='rake minitest:all:quick'
 alias rtu='rake test:units'
@@ -63,4 +48,3 @@ alias rtf='rake test:functionals'
 alias rti='rake test:integration'
 alias rst='rake stats'
 alias tlog='tail -f log/development.log'
-alias rdbm='rake db:migrate'
