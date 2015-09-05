@@ -5,6 +5,17 @@ export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
 export PGDATABASE=postgres
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby 2.2.3
+
+
+# link up hub
+eval "$(hub alias -s)"
+
 # ruby garbage collection and env settings
 source ~/.ruby-settings
 
