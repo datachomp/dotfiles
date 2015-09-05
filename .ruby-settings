@@ -1,0 +1,15 @@
+export BUNDLER_EDITOR=subl
+
+
+#ruby garbage collection hacks
+RUBY_GC_HEAP_FREE_SLOTS=4096              #           Must be > 0
+RUBY_GC_HEAP_INIT_SLOTS=10000             #           Must be > 0
+RUBY_GC_HEAP_GROWTH_FACTOR=1.8            #           Must be > 1.0
+RUBY_GC_HEAP_GROWTH_MAX_SLOTS=0           # Disabled; Must be > 0
+RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR=2.0   #           Must be > 0
+RUBY_GC_MALLOC_LIMIT=16777216             # 16 MiB;   Must be > 0
+RUBY_GC_MALLOC_LIMIT_MAX=33554432         # 32 MiB;   Must be > 0
+RUBY_GC_MALLOC_LIMIT_GROWTH_FACTOR=1.4    #           Must be > 1.0
+RUBY_GC_OLDMALLOC_LIMIT=16777216          # 16 MiB;   Must be > 0
+RUBY_GC_OLDMALLOC_LIMIT_MAX=134217728     # 128 MiB;  Must be > 0
+RUBY_GC_OLDMALLOC_LIMIT_GROWTH_FACTOR=1.2 #           Must be > 1.0
