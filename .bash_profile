@@ -6,6 +6,7 @@ export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 export PGDATABASE=postgres
 
 export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin
 
 source /usr/local/share/chruby/chruby.sh
