@@ -54,31 +54,31 @@ brew install caskroom/cask/brew-cask
 
 # Apps
 apps=(
-  alfred
-  dropbox
-  google-chrome
-  qlcolorcode
-  slack
-  firefox
-  hazel
-  qlmarkdown
-  seil
-  arq
+  # alfred
+  # dropbox
+  # google-chrome
+  # qlcolorcode
+  # slack
+  # firefox
+  # hazel
+  # qlmarkdown
+  # seil
+  # arq
   iterm2
-  qlprettypatch
-  shiori
+  # qlprettypatch
+  # shiori
   sublime-text3
-  virtualbox
+  # virtualbox
   atom
-  flux
-  mailbox
-  qlstephen
-  sketch
+  # flux
+  # mailbox
+  # qlstephen
+  # sketch
   vlc
-  cloudup
-  nvalt
+  # cloudup
+  # nvalt
   quicklook-json
-  skype
+  # skype
 )
 
 
@@ -97,6 +97,7 @@ fonts=(
   font-m-plus
   font-clear-sans
   font-roboto
+  font-inconsolata
 )
 
 # install fonts
