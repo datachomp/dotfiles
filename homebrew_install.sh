@@ -98,9 +98,18 @@ fonts=(
   font-clear-sans
   font-roboto
   font-inconsolata
+  font-droid-sans-mono
+  font-hack
+  font-lobster
+  font-marvel
+  font-source-code-pro
+  font-source-sans-pro
+  font-spicy-rice
+  font-ubuntu
+  font-ubuntu-mono-powerline
 )
 
 # install fonts
 echo "installing fonts..."
 brew cask install ${fonts[@]}
-https://github.com/caskroom/homebrew-fonts/tree/master/Casks
+# https://github.com/caskroom/homebrew-fonts/tree/master/Casks
