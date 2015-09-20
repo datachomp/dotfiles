@@ -9,17 +9,13 @@ fi
 brew update
 
 # Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
+brew install coreutils findutils
 
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
-
-# Install Bash 4
-brew install bash
-
+# Install Bash 4 and git
+brew install bash git hub
 
 # Install proggy langs
-brew install go elixir chruby ruby-install
+brew install go elixir node
 
 # Install data stuff
 brew install redis memcached rethinkdb sqlite
@@ -28,65 +24,19 @@ brew install redis memcached rethinkdb sqlite
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
+brew install gpg2 curl wget tmux wrk
 
-binaries=(
-  graphicsmagick
-  webkit2png
-  rename
-  zopfli
-  sshfs
-  trash
-  node
-  tree
-  ack
-  hub
-  git
-)
 
-echo "installing binaries..."
-brew install ${binaries[@]}
+brew tap neovim/neovim
+brew install --HEAD neovim
+brew tap rogual/neovim-dot-app
+brew install --HEAD neovim-dot-app
+
+brew linkapps neovim-dot-app
 
 brew cleanup
 
-
 brew install caskroom/cask/brew-cask
-
-
-# Apps
-apps=(
-  # alfred
-  # dropbox
-  # google-chrome
-  # qlcolorcode
-  # slack
-  # firefox
-  # hazel
-  # qlmarkdown
-  # seil
-  # arq
-  iterm2
-  # qlprettypatch
-  # shiori
-  sublime-text3
-  # virtualbox
-  atom
-  # flux
-  # mailbox
-  # qlstephen
-  # sketch
-  vlc
-  # cloudup
-  # nvalt
-  quicklook-json
-  # skype
-)
-
-
-
-# Install apps to /Applications
-# Default is: /Users/$user/Applications
-echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
 
 
 
