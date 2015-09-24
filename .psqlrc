@@ -36,6 +36,8 @@
 -- greeting
 \echo '\nWelcome, my magistrate\n'
 
+\set clear '\\! clear;'
+
 --helpful queries
 \set uptime 'select now() - backend_start as uptime from pg_stat_activity where pid = pg_backend_pid();'
 \set show_slow_queries 'SELECT (total_time / 1000 / 60) as total_minutes, (total_time/calls) as average_time, query FROM pg_stat_statements ORDER BY 1 DESC LIMIT 100;'
