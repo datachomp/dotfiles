@@ -26,6 +26,10 @@ brew install homebrew/dupes/grep
 
 brew install gpg2 curl wget tmux wrk
 
+#infra
+brew install linode/cli/linode-cli
+brew install ansible
+
 
 brew tap neovim/neovim
 brew install --HEAD neovim
