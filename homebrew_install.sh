@@ -24,7 +24,7 @@ brew install redis memcached rethinkdb sqlite
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
-brew install gpg2 curl wget tmux wrk
+brew install gpg2 curl wget tmux wrk ssh-copy-id
 
 #infra
 brew install linode/cli/linode-cli
