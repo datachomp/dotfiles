@@ -12,7 +12,7 @@ brew update
 brew install coreutils findutils
 
 # Install Bash 4 and git
-brew install bash git hub
+brew install bash git hub shellcheck
 
 # Install proggy langs
 brew install go elixir node
