@@ -12,7 +12,7 @@ alias ipconfig='ifconfig'
 #software updates
 alias update='brew update; brew upgrade; brew cleanup; gem update;'
 alias hu='heroku update && heroku plugins:update'
-alias springclean='brew cleanup --force -s && rvm cleanup all && gem cleanup all'
+alias springclean='brew cleanup --force -s && rvm cleanup all && gem cleanup'
 
 # General aliases
 alias cd..='cd ..'
