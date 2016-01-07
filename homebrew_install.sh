@@ -25,6 +25,8 @@ brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
 brew install gpg2 curl wget tmux wrk ssh-copy-id
+# media lib to fix apple buffoonery 
+brew install libdvdcss
 
 #infra
 brew install linode/cli/linode-cli
