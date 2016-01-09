@@ -15,10 +15,13 @@ brew install coreutils findutils
 brew install bash git hub shellcheck
 
 # Install proggy langs
-brew install go elixir node
+brew install go elixir node crystal-lang
 
 # Install data stuff
 brew install redis memcached rethinkdb sqlite
+
+# osp stuff
+brew install ansible linode-cli
 
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
