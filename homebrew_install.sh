@@ -27,7 +27,7 @@ brew install ansible linode-cli
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
-brew install gpg2 curl wget tmux wrk ssh-copy-id
+brew install gpg2 curl wget tmux wrk ssh-copy-id speedtest_cli
 # media lib to fix apple buffoonery 
 brew install libdvdcss
 
