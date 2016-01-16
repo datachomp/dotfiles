@@ -25,15 +25,15 @@ brew install ansible linode-cli
 
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
-brew install homebrew/dupes/grep homebrew/dupes/rsync homebrew/dupes/nano homebrew/dupes/zlip
+brew install homebrew/dupes/grep homebrew/dupes/rsync homebrew/dupes/nano
 brew install homebrew/dupes/whois homebrew/dupes/unzip homebrew/dupes/less homebrew/dupes/gzip
 brew install homebrew/dupes/awk homebrew/dupes/bzip2 homebrew/dupes/diffstat homebrew/dupes/diffutils homebrew/dupes/screen
 
 brew install gpg2 curl wget tmux wrk ssh-copy-id speedtest_cli
-# media lib to fix apple buffoonery 
+# media lib to fix apple buffoonery
 brew install libdvdcss
 
-#infra
+# infra
 brew install linode/cli/linode-cli
 brew install ansible
 
