@@ -12,10 +12,6 @@
 	hum = push heroku master
 	dbyam = update-index --assume-unchanged config/database.yml
 
-[apply]
-	# Detect whitespace errors when applying a patch
-	whitespace = fix
-
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
 	ui = auto
@@ -35,7 +31,8 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
-
+[push]
+	default = simple
 [user]
         email = rob@datachomp.com
         name = rob sullivan
