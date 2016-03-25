@@ -29,7 +29,7 @@ brew install homebrew/dupes/grep homebrew/dupes/rsync homebrew/dupes/nano
 brew install homebrew/dupes/whois homebrew/dupes/unzip homebrew/dupes/less homebrew/dupes/gzip
 brew install homebrew/dupes/awk homebrew/dupes/bzip2 homebrew/dupes/diffstat homebrew/dupes/diffutils homebrew/dupes/screen
 
-brew install gpg2 curl wget tmux wrk ssh-copy-id speedtest_cli
+brew install gpg2 curl wget tmux wrk ssh-copy-id speedtest_cli youtube-dl p7zip htop-osx asciidoc
 # media lib to fix apple buffoonery
 brew install libdvdcss
 
