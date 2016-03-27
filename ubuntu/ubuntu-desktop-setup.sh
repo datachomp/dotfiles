@@ -9,6 +9,7 @@ sudo add-apt-repository -y ppa:neovim-ppa/unstable
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo add-apt-repository -y ppa:ys/emojione-picker
 sudo add-apt-repository -y ppa:stebbins/handbrake-releases
+sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
 
 # postgres time!
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
@@ -24,7 +25,7 @@ sudo apt-get install -y git curl
 sudo apt-get install -y ubuntu-wallpapers* ntp ntpdate
 
 # codecs
-sudo apt-get install -y handbrake-gtk handbrake-cli
+sudo apt-get install -y handbrake handbrake-cli
 sudo apt-get install -y libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras
 
 
@@ -39,8 +40,12 @@ sudo apt-get install -y geary
 sudo apt-get install -y neovim sublime-text-installer
 
 # languages
-echo "install golang"
+sudo apt-get install -y golang-go ubuntu-sdk
 echo "install ruby"
+curl -L https://get.rvm.io | bash -s stable --autolibs=3
+source ~/.bash_profile
+rvm install 2.0.0-p247
+rvm --default use 2.0.0-p247
 
 
 echo "clean up"
