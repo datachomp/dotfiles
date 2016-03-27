@@ -34,5 +34,5 @@
 [push]
 	default = simple
 [user]
-        email = rob@datachomp.com
-        name = rob sullivan
+  email = rob@datachomp.com
+  name = rob sullivan
