@@ -44,8 +44,8 @@ sudo apt-get install -y golang-go ubuntu-sdk
 echo "install ruby"
 curl -L https://get.rvm.io | bash -s stable --autolibs=3
 source ~/.bash_profile
-rvm install 2.0.0-p247
-rvm --default use 2.0.0-p247
+rvm install 2.3.0
+rvm --default use 2.3.0
 
 
 echo "clean up"
