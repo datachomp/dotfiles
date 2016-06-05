@@ -13,10 +13,6 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
-# Ignore anything in a directory not starting with "."
-[^\.]*/
-# Except bin/
-!/bin/
 
 # Why yes, I am checking in my whole home dir
 .CFUserTextEncoding
