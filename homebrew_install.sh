@@ -18,7 +18,7 @@ brew install bash git hub shellcheck
 brew install go elixir node crystal-lang
 
 # Install data stuff
-brew install redis memcached rethinkdb sqlite
+brew install redis memcached sqlite
 
 # osp stuff
 brew install ansible linode-cli
