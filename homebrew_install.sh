@@ -15,7 +15,7 @@ brew install coreutils findutils
 brew install bash git hub shellcheck
 
 # Install proggy langs
-brew install go elixir node crystal-lang
+brew install go node crystal-lang
 
 # Install data stuff
 brew install redis memcached sqlite
@@ -30,12 +30,13 @@ brew install homebrew/dupes/whois homebrew/dupes/unzip homebrew/dupes/less homeb
 brew install homebrew/dupes/awk homebrew/dupes/bzip2 homebrew/dupes/diffstat homebrew/dupes/diffutils homebrew/dupes/screen
 
 brew install gpg2 gnupg gnupg2 curl wget tmux wrk ssh-copy-id speedtest_cli youtube-dl p7zip htop-osx asciidoc
+
+brew install hugo imagemagick jemalloc jq sshuttle
 # media lib to fix apple buffoonery
 brew install libdvdcss
 
 # infra
 brew install linode/cli/linode-cli
-brew install ansible
 
 
 brew tap neovim/neovim
