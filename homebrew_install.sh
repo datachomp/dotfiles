@@ -20,9 +20,6 @@ brew install go node crystal-lang
 # Install data stuff
 brew install redis memcached sqlite
 
-# osp stuff
-brew install ansible linode-cli
-
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep homebrew/dupes/rsync homebrew/dupes/nano
