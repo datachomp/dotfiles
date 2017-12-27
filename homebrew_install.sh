@@ -34,7 +34,7 @@ brew install libdvdcss
 
 # infra
 brew install linode/cli/linode-cli
-
+brew install awscli
 
 brew tap neovim/neovim
 brew install --HEAD neovim
