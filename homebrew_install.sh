@@ -48,6 +48,7 @@ brew cleanup
 brew install caskroom/cask/brew-cask
 
 brew cask install liteide   # go IDE
+brew cask install flux
 
 brew tap caskroom/fonts
 brew cask search /font-roboto/
