@@ -15,7 +15,7 @@ sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 sudo wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5 postgresql-client-9.5 pgbouncer pgadmin3 libpq-dev
+sudo apt-get install -y postgresql-12 postgresql-contrib-12 postgresql-client-12 pgbouncer pgadmin3 libpq-dev
 
 # utilities
 sudo apt-get install -y htop openssh-server
@@ -46,8 +46,8 @@ echo "install ruby"
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 \curl -sSL https://get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
-rvm install 2.3.0
-rvm --default use 2.3.0
+rvm install 2.7.0
+rvm --default use 2.7.0
 
 
 echo "clean up"
