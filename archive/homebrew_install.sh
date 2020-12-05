@@ -1,3 +1,5 @@
+#### This no longer makes sense and the casks don't even work
+
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
