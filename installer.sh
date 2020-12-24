@@ -24,6 +24,11 @@ then
 	ln -s ${BASEDIR}/.sublime_settings ~/
 	ln -s ${BASEDIR}/.tmux.conf ~/
 	ln -s ${BASEDIR}/.vimrc ~/
+	# profile
+	ln -s ${BASEDIR}/.aliases ~/
+	ln -s ${BASEDIR}/.bashrc ~/
+	ln -s ${BASEDIR}/.bash_profile ~/
+	
 elif [ $OS == "ubuntu" ]
 then
 	echo "You've got linners"
