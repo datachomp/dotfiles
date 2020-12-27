@@ -13,8 +13,11 @@ then
 	# ruby
 	ln -s ${BASEDIR}/.gemrc ~/
 	ln -s ${BASEDIR}/.irbrc ~/
-	ls -s ${BASEDIR}/.railsrc ~/
-	ls -s ${BASEDIR}/.ruby-settings ~/
+	#ls -s ${BASEDIR}/.railsrc ~/
+	#ls -s ${BASEDIR}/.ruby-settings ~/
+	cp .railsrc ~/
+	cp .ruby-settings ~/
+
 	#web pullers
 	ln -s ${BASEDIR}/.curlrc ~/
 	ln -s ${BASEDIR}/.wgetrc ~/
@@ -40,6 +43,7 @@ then
 	ln -s ${BASEDIR}/.irbrc ~/
 	ls -s ${BASEDIR}/.railsrc ~/
 	ls -s ${BASEDIR}/.ruby-settings ~/
+
 	#web pullers
 	ln -s ${BASEDIR}/.curlrc ~/
 	ln -s ${BASEDIR}/.wgetrc ~/
@@ -52,4 +56,3 @@ then
 else
    echo "You need to select a better option"
 fi
-
