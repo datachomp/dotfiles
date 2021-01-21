@@ -10,7 +10,7 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 alias ipconfig='ifconfig'
 
 #software updates
-alias brewery='brew update; brew upgrade; brew cleanup; gem update;'
+alias brewery='brew update; brew upgrade; brew cleanup; gem update --system; gem update;'
 alias hu='heroku update && heroku plugins:update'
 alias springclean='brew cleanup --force -s && rvm cleanup all && gem cleanup'
 
