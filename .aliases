@@ -3,6 +3,14 @@ alias dl='cd ~/Downloads'
 alias p='cd ~/projects'
 alias h='history'
 
+
+fixknownhosts() {
+  cp ~/.ssh/known_hosts ~/.ssh/known_hosts_$(date +%Y%m%d-%H%M%S) ; 
+  sed -e "$1d" ~/.ssh/known_hosts > ~/.ssh/known_hosts_new ; 
+  mv ~/.ssh/known_hosts_new ~/.ssh/known_hosts ; 
+  chmod 644 ~/.ssh/known_hosts
+}
+
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
