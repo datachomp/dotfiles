@@ -1,3 +1,4 @@
 --database=postgresql
---skip-spring
 --skip-coffee
+--skip-sprockets
+--webpack
