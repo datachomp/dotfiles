@@ -1,0 +1,3 @@
+db-type: postgres
+bootstrap: 4
+with-dep: true
