@@ -18,10 +18,13 @@ brew install bash git hub shellcheck
 brew install go node
 
 # Install more recent versions of some OS X tools
-brew tap homebrew/dupes
-brew install homebrew/dupes/grep homebrew/dupes/rsync homebrew/dupes/nano
-brew install homebrew/dupes/whois homebrew/dupes/unzip homebrew/dupes/less homebrew/dupes/gzip
-brew install homebrew/dupes/awk homebrew/dupes/bzip2 homebrew/dupes/diffstat homebrew/dupes/diffutils homebrew/dupes/screen
+#brew tap homebrew/dupes
+#brew install homebrew/dupes/grep homebrew/dupes/rsync homebrew/dupes/nano
+#brew install homebrew/dupes/whois homebrew/dupes/unzip homebrew/dupes/less homebrew/dupes/gzip
+#brew install homebrew/dupes/awk homebrew/dupes/bzip2 homebrew/dupes/diffstat homebrew/dupes/diffutils homebrew/dupes/screen
+### Update MacOS tools
+brew install bzip2 grep gzip less nano rsync unzip whois
+
 
 brew install jq sshuttle curl wget tmux wrk ssh-copy-id speedtest_cli
 
