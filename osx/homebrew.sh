@@ -23,7 +23,7 @@ brew install homebrew/dupes/grep homebrew/dupes/rsync homebrew/dupes/nano
 brew install homebrew/dupes/whois homebrew/dupes/unzip homebrew/dupes/less homebrew/dupes/gzip
 brew install homebrew/dupes/awk homebrew/dupes/bzip2 homebrew/dupes/diffstat homebrew/dupes/diffutils homebrew/dupes/screen
 
-brew install jq sshuttle curl wget tmux wrk ssh-copy-id speedtest_cli youtube-dl p7zip asciidoc libdvdcss
+brew install jq sshuttle curl wget tmux wrk ssh-copy-id speedtest_cli
 
 # media
 brew install youtube-dl p7zip asciidoc libdvdcss
@@ -32,12 +32,11 @@ brew install youtube-dl p7zip asciidoc libdvdcss
 brew install linode/cli/linode-cli
 #brew install awscli
 
-brew tap neovim/neovim
-brew install --HEAD neovim
-brew tap rogual/neovim-dot-app
-brew install --HEAD neovim-dot-app
-
-brew linkapps neovim-dot-app
+#brew tap neovim/neovim
+#brew install --HEAD neovim
+#brew tap rogual/neovim-dot-app
+#brew install --HEAD neovim-dot-app
+#brew linkapps neovim-dot-app
 
 brew cleanup
 
