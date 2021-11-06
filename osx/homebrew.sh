@@ -32,8 +32,9 @@ brew install jq sshuttle curl wget tmux wrk ssh-copy-id speedtest_cli
 brew install youtube-dl p7zip asciidoc libdvdcss
 
 # infra
-brew install linode/cli/linode-cli
-#brew install awscli
+brew tap linode/cli && brew install linode-cli
+brew install heroku/brew/heroku
+brew install awscli
 
 #brew tap neovim/neovim
 #brew install --HEAD neovim

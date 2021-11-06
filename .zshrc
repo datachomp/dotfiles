@@ -17,3 +17,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
 export PATH="/opt/homebrew/opt/bzip2/bin:$PATH"
 export PATH="/opt/homebrew/opt/unzip/bin:$PATH"
+
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/rob/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
