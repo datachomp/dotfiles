@@ -29,8 +29,8 @@ then
 	ln -s ${BASEDIR}/.vimrc ~/
 	# profile
 	ln -s ${BASEDIR}/.aliases ~/
-	ln -s ${BASEDIR}/.bashrc ~/
-	ln -s ${BASEDIR}/.bash_profile ~/
+	#ln -s ${BASEDIR}/.bashrc ~/
+	#ln -s ${BASEDIR}/.bash_profile ~/
 	
 elif [ $OS == "ubuntu" ]
 then

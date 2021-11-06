@@ -14,3 +14,6 @@ alias dcr="docker compose run --rm app"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/bzip2/bin:$PATH"
+export PATH="/opt/homebrew/opt/unzip/bin:$PATH"
