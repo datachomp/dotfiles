@@ -15,7 +15,9 @@ brew install coreutils findutils
 brew install bash git hub shellcheck
 
 # Install proggy langs
-brew install go node
+brew install go
+# javascript
+brew install node@16 yarn
 
 # Install more recent versions of some OS X tools
 #brew tap homebrew/dupes
@@ -34,7 +36,7 @@ brew install youtube-dl p7zip asciidoc libdvdcss
 # infra
 brew tap linode/cli && brew install linode-cli
 brew install heroku/brew/heroku
-brew install awscli
+brew install awscli redis
 
 #brew tap neovim/neovim
 #brew install --HEAD neovim
