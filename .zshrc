@@ -11,6 +11,7 @@ alias stop_docker="pkill -SIGHUP -f /Applications/Docker.app 'docker serve'"
 alias dcd="docker compose down --remove-orphans"
 alias dcr="docker compose run --rm app"
 
+alias netcheck="networkQuality -s"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
