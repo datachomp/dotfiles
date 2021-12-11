@@ -1,1 +1,3 @@
 --database=postgresql
+--javascript esbuild
+--css tailwind
