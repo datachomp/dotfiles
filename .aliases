@@ -3,6 +3,11 @@ alias dl='cd ~/Downloads'
 alias p='cd ~/projects'
 alias h='history'
 
+export RUBY_YJIT_ENABLE=1
+
+function rvm_install {
+    rvm install $1 --with-openssl-dir=$(brew --prefix openssl)
+}
 
 fixknownhosts() {
   cp ~/.ssh/known_hosts ~/.ssh/known_hosts_$(date +%Y%m%d-%H%M%S) ; 
