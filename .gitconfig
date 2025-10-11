@@ -38,3 +38,5 @@
 [user]
   email = rob@datachomp.com
   name = rob sullivan
+[init]
+	defaultBranch = main
