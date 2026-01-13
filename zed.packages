@@ -1,0 +1,14 @@
+## golang
+### https://go.dev/gopls/editor/zed
+go install golang.org/x/tools/gopls@latest
+
+## ruby
+
+## bun
+
+
+## markdown
+
+## docker
+
+## yaml
